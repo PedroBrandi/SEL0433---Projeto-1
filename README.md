@@ -4,7 +4,7 @@ Este projeto consiste em um módulo dosador rotativo acionado por motor DC, dese
 
 O objetivo do dosador é girar exatamente 10 voltas para liberar uma quantidade fixa de parafusos, exibindo uma contagem de voltas no display de 7 segmentos acoplado ao simulador utilizado. Além disso, o programa conta com inversão no sentido de movimento do motor, reiniciando a contagem (não cumulativa) exibida no display e apresentando um led dedicado à orientação do giro.
 
-A descrição técnica de cada decisão tomada no código, bem como o detalhamento individual de cada função estão atribuídas no arquivo acoplado neste repositório (`sel0433_projeto1_final.asm`) em formato de comentário.
+A descrição técnica de cada decisão tomada no código, bem como o detalhamento individual de cada função estão atribuídas no arquivo presente neste repositório (`sel0433_projeto1_final.asm`) em formato de comentário.
 
 ## Funcionalidades Apresentadas
 
