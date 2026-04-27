@@ -6,8 +6,14 @@ O objetivo do dosador é girar exatamente 10 voltas para liberar uma quantidade 
 
 ## Funcionalidades Apresentadas
 
-* Controle de quantidade de voltas: O programa conta as voltas dadas pelo motor e as exibe em um display de 7 segmentos
+* Controle de quantidade de voltas: O programa conta as voltas dadas pelo motor e as exibe em um display de 7 segmentos.
 * Controle de sentido de giro: O programa conta com a inversão no sentido de giro do motor mediante o acionamento de uma chave SW, simulando um caso real de travamento no giro do motor.
-* Exibição da quantidade de voltas: O programa dispõe de tabelas referentes aos valores decimais para correta exibição no display de 7 segmentos, sendo referenciadas mais de uma vez durante o código 
+* Exibição da quantidade de voltas: O programa dispõe de tabelas referentes aos valores decimais para correta exibição no display de 7 segmentos, sendo referenciadas mais de uma vez durante o código. 
 * Reset na contagem: Ao inverter o sentido de movimento, a contagem de voltas no motor é reiniciada, de modo a não exibir um resultado cumulativo.
-* Feedback visual do sentido de giro: O sentido de giro do motor é referência pela exibição ou não do ponto decimal no display de 7 segmentos
+* Feedback visual do sentido de giro: O sentido de giro do motor é referência pela exibição ou não do ponto decimal no display de 7 segmentos.
+
+## Arquitetura implementada
+* Duas tabelas distintas utilizadas separadamente para os dois sentidos de rotação requisitados no projeto, com uma delas contendo a presença do ponto decimal no display de 7 segmentos (Anti-horário).
+* Multiplas funções dentro da seção MAIN, referenciando: verificação da chave SW(verifica_botao), ajuste do timer(configura_contador), acionamento dos motores(aciona_motor) e correta exibição da contagem do número de voltas no display de 7 segmentos, obedecendo o sentido requisitado(exibe_contagem).
+* Utilização da flag F0 como variável de estado do sentido do motor.
+* Utilização do Timer 1 como contador(Modo 2), aproveitando da funcionalidade de Reload.
