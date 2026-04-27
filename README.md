@@ -11,3 +11,5 @@ O objetivo do dosador é girar exatamente 10 voltas para liberar uma quantidade 
 * Exibição da quantidade de voltas: O programa dispõe de tabelas referentes aos valores decimais para correta exibição no display de 7 segmentos, sendo referenciadas mais de uma vez durante o código 
 * Reset na contagem: Ao inverter o sentido de movimento, a contagem de voltas no motor é reiniciada, de modo a não exibir um resultado cumulativo.
 * Feedback visual do sentido de giro: O sentido de giro do motor é referência pela exibição ou não do ponto decimal no display de 7 segmentos
+
+aaaaa
