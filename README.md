@@ -1,4 +1,7 @@
 # SEL0433 - Assembly 8051 - Projeto Final
+### Integrantes: 
+* João Henrique Viana de Oliveira - 15462907
+* Pedro Brandi Pereira - 15640990
 
 Este projeto consiste em um módulo dosador rotativo acionado por motor DC, desenvolvido para operar em uma linha de produção de uma fábrica de parafusos, conforme descrito na seção inicial do projeto proposto. O sistema foi programado em linguagem Assembly para a família de microcontroladores MCS-51 (8051) e validado no simulador EdSim51.
 
