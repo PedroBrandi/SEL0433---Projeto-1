@@ -14,6 +14,6 @@ O objetivo do dosador é girar exatamente 10 voltas para liberar uma quantidade 
 
 ## Arquitetura implementada
 * Duas tabelas distintas utilizadas separadamente para os dois sentidos de rotação requisitados no projeto, com uma delas contendo a presença do ponto decimal no display de 7 segmentos (anti-horário);
-* Multiplas funções chamadas dentro da seção MAIN, referenciando: verificação da chave SW (`verifica_botao`), ajuste do timer (`configura_contador`), acionamento dos motores (`aciona_motor`) e correta exibição da contagem do número de voltas no display de 7 segmentos, obedecendo o sentido requisitado(`exibe_contagem`);
+* Multiplas funções chamadas dentro da seção MAIN, referenciando: verificação da chave SW (`verifica_botao`), ajuste do timer (`configura_contador`), acionamento dos motores (`aciona_motor`) e correta exibição da contagem do número de voltas no display de 7 segmentos, obedecendo o sentido requisitado (`exibe_contagem`);
 * Utilização da flag F0 como variável de estado do sentido do motor;
 * Utilização do Timer 1 como contador (modo 2), aproveitando da funcionalidade de Reload.
